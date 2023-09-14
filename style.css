@@ -1,0 +1,53 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.display{
+    height:100px;
+    width: 90%;
+    margin: 10px auto;
+}
+#display{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: larger;
+    direction: rtl;
+    border: none;
+    appearance: none;
+}
+.container{
+    height:420px;
+    border-radius: 10px;
+    width:300px;
+    background-color: red;
+}
+.buttons{
+    display: grid;
+    place-items: center;
+    margin:20px 15px ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:5px;
+}
+
+.buttons button{
+    height: 50px;
+    width:50px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: large;
+    border-radius: 50%;
+}
+.operators{
+    background-color: orange;
+}
+
+/* CSS to hide the increment and decrement arrows */
+#display::-webkit-inner-spin-button,
+#display::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
